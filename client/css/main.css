@@ -233,11 +233,11 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-block {
+.cartoon-choose {
     min-height: 26rem;
 }
 
-.cartoon-block:hover {
+.cartoon-choose:hover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
