@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Humor Lab brought to you by Very Semi Serious</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,700,300italic'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../client/css/bigvideo.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <style>
+        #big-video-control-container {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="main">
+    <a id="start-button">Let's get funny!</a>
+</div>
+
+<!-- BigVideo Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="js/jquery-ui-1.8.22.custom.min.js"></script>
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/video.js"></script>
+
+<!-- BigVideo -->
+<script src="js/bigvideo.js"></script>
+
+<script>
+    var BV;
+    $(function() {
+        // initialize BigVideo
+        BV = new $.BigVideo();
+        BV.init();
+        BV.show('http://video-js.zencoder.com/oceans-clip.mp4', {});
+
+        var onEnd = function(){
+            window.location.href = 'http://localhost:3000/showdown';
+        };
+        BV.addEvent("play", onEnd);
+    });
+
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+</body>
+</html>
