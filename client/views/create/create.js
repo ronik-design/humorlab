@@ -1,7 +1,23 @@
 Template.create.helpers({
     cartoon: function() {
-        var id = Session.get('currentCartoon');
-        return Cartoons.findOne({_id: id});
+        return Session.get('currentCartoon');
+    }
+});
+
+Template.create.events({
+    'click .submit': function () {
+        var text = $(".caption-entry").val(),
+            cartoonId = Session.get('currentCartoon')._id;
+
+        if(text && cartoonId) {
+            var id = Captions.insert({
+                cartoon: cartoonId,
+                text: text,
+                score: 0
+            });
+
+            Meteor.Router.to("/caption/" + id);
+        }
     }
 });
 
