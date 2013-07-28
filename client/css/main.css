@@ -233,27 +233,28 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-block.cartoon-1,
-.cartoon-block.cartoon-2 {
+.cartoon-1,
+.cartoon-2 {
     min-height: 26rem;
 }
 
-.cartoon-block.cartoon-1:hover,
-.cartoon-block.cartoon-2:hover {
+.cartoon-1:hover,
+.cartoon-2:hover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
 
 .cartoon-block.reveal-data:hover {
-    border: 5px solid #FFF;
+    border: 5px solid #fff;
 }
 
 .cartoon-block.reveal-data {
-    border: 5px solid #FFF;
+    border: 5px solid #fff;
 }
 
 .cartoon-block.winner.reveal-data {
     border: 5px solid #3c7762;
+    cursor: default;
 }
 
 .cartoon-block.cartoon-1 {}
@@ -404,6 +405,7 @@ textarea {
 .caption-enter {
     background-color: rgba(0,0,0,0.2);
     border-radius: .4rem;
+    box-shadow: inset 0 0 14px rgba(0,0,0,0.3);
     margin-top: 2rem;
 }
 
