@@ -1,23 +1,23 @@
 <template name="showdown">
-
+    {{#with cartoon}}
     <div id="content-wrapper" class="wrapper">
         <div id="content" class="container">
             <div id="canvas" class="clearfix">
                 <div class="grid_6 cartoon-block cartoon-1 selected" data-won="40" data-total="65" data-rank="1533">
-                    <img class="cartoon-image" src="img/cartoon_1_orig_cat-mouse-gun.png" alt=""/>
-                    <span class="cartoon-caption">Six rounds. Nine lives. You do the math.</span>
+                    <img class="cartoon-image" src="{{src}}" alt=""/>
+                    <span class="cartoon-caption">{{captionA}}</span>
                 </div>
 
                 <div class="or">or</div>
 
                 <div class="grid_6 omega cartoon-block cartoon-2" data-won="100" data-total="265" data-rank="5016">
-                    <img class="cartoon-image" src="img/cartoon_1_orig_cat-mouse-gun.png" alt=""/>
-                    <span class="cartoon-caption">Hey, I got nine kids, a dental floss problem, and an owner with a laser pointer &mdash; you'd be doing me a favor.</span>
+                    <img class="cartoon-image" src="{{src}}" alt=""/>
+                    <span class="cartoon-caption">{{captionB}}</span>
                 </div>
             </div>
         </div>
     </div>
-
+    {{/with}}
     <div id="toolbar-wrapper" class="wrapper">
         <div id="toolbar" class="container">
             <div class="grid_12">
