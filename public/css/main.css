@@ -94,27 +94,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.wrapper {
+    width: 100%;
+}
+
 /**
  * Header
  */
 #header-wrapper {
     background-color: #5f1542;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
 }
 
-#header {}
-
-#title {
+#header {
     color: #fff;
     text-align: center;
 }
 
-#title h1 {}
+#header h1 {}
 
-#title h2 {}
+#header h2 {}
 
-#page-nav {
+#nav-wrapper {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+#nav {
+    background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     margin: 0;
@@ -123,28 +129,34 @@ textarea {
     width: 100%;
 }
 
-#page-nav li {
+#nav li {
     border-right: 1px solid #ccc;
     display: inline-block;
+    font-weight: 600;
     margin: 0;
     padding: 1rem 2rem;
+    text-transform: uppercase;
 }
 
-#page-nav li:first-child {
+#nav li:first-child {
     border-left: 1px solid #ccc;
 }
 
-#page-nav li:hover {}
+#nav li a {
+    color: #333;
+    text-decoration: none;
+}
 
-#page-nav .current {}
+#nav li a:hover {}
+
+#nav .current {}
 
 /**
  * Content
  */
 
 #content-wrapper {
-    background-image: url('../img/tile_dark-wood.png');
-    width: 100%;
+    background-image: url('../img/tile_light-grunge.png');
 }
 
 #content {}
@@ -160,6 +172,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 2rem;
     padding: 1rem;
+    text-align: center;
 }
 
 .cartoon-block.cartoon-1 {}
@@ -179,18 +192,36 @@ textarea {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    height: 3rem;
+    left: 50%;
+    line-height: 3rem;
+    margin-left: -1.5rem;
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 50%;
+    width: 3rem;
 }
 
 /* toolbar */
 
-#toolbar {}
+#toolbar-wrapper {
+    border-top: 1px solid #ccc;
+}
 
-.button {}
+#toolbar {
+    text-align: center;
+}
+
+.button {
+    border: 2px solid #333;
+    color: #333;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
 
 .button:hover {}
 
@@ -202,16 +233,24 @@ textarea {
 
 /* resources */
 
+#resources-wrapper {}
+
 #resources {}
 
 /**
  * Footer
  */
+
 #footer-wrapper {
+    background-color: #111;
     width: 100%;
 }
 
-#footer {}
+#footer {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
 
 #footer span {}
 
