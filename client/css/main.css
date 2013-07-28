@@ -23,6 +23,15 @@ body {
     font-family: 'Averia Serif Libre', times, serif;
     font-size: 10px;
     line-height: 1.4;
+    /* assuming you want a transparent body */
+    background: rgba(0, 0, 0, 0);
+    /* you'll need the standard -moz- etc -- you are using a CSS preproc right? */
+    transition: background 0 linear 1s;
+}
+
+body.transitioning {
+    /* a different color that happens to also be transparent */
+    background: rgba(1, 0, 0, 0);
 }
 
 /*
@@ -200,6 +209,7 @@ textarea {
     min-height: 26rem;
     padding: 1rem;
     text-align: center;
+    z-index: 2;
 
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
@@ -213,6 +223,18 @@ textarea {
     cursor: pointer;
 }
 
+.cartoon-block.reveal-data:hover {
+    border: 5px solid #FFF;
+}
+
+.cartoon-block.reveal-data {
+    border: 5px solid #FFF;
+}
+
+.cartoon-block.winner.reveal-data {
+    border: 5px solid #3c7762;
+}
+
 .cartoon-block.cartoon-1 {}
 
 .cartoon-block.cartoon-2 {}
@@ -224,6 +246,10 @@ textarea {
 .cartoon-caption {
     font-size: 1rem;
     font-style: italic;
+}
+
+.reveal-data .cartoon-caption {
+    display: none;
 }
 
 .or {
@@ -243,6 +269,7 @@ textarea {
     text-shadow: 1px 2px 0 #fff;
     top: 50%;
     width: 3rem;
+    z-index: 3;
 }
 
 /* toolbar */

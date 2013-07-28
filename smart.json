@@ -1,6 +1,7 @@
 {
   "packages": {
     "popcorn": {},
-    "transitioner": {}
+    "transitioner": {},
+    "buzz.js": {}
   }
 }
