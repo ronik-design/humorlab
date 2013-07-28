@@ -233,13 +233,11 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-1,
-.cartoon-2 {
+.cartoon-block {
     min-height: 26rem;
 }
 
-.cartoon-1:hover,
-.cartoon-2:hover {
+.cartoon-block:hover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
@@ -257,9 +255,6 @@ textarea {
     cursor: default;
 }
 
-.cartoon-block.cartoon-1 {}
-
-.cartoon-block.cartoon-2 {}
 
 .cartoon-image {
     width: 100%;
