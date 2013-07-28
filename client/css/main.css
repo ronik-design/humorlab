@@ -274,6 +274,14 @@ textarea {
     display: none;
 }
 
+.effeckt-figcaption-wrap {
+    padding: 0 1rem;
+}
+
+.ranking {
+    font-family: "Paytone One", Arial, sans-serif;
+}
+
 .or {
     background-color: #e64b4b;
     border-radius: 50%;
