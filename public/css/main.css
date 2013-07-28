@@ -19,7 +19,8 @@ textarea {
 }
 
 body {
-    font-family: 'Times New Roman', times, serif;
+    color: #333;
+    font-family: 'Averia Serif Libre', times, serif;
     font-size: 10px;
     line-height: 1.4;
 }
@@ -102,26 +103,31 @@ textarea {
  * Header
  */
 #header-wrapper {
-    background-color: #5f1542;
 }
 
 #header {
-    color: #fff;
     text-align: center;
+    margin-top: 2rem;
 }
 
-#header h1 {}
+#header h1 {
+    font-family: "Paytone One", Arial, sans-serif;
+    font-size: 3.2rem;
+    line-height: 0.8em;
+    margin: 0 0 1.2rem;
+}
 
-#header h2 {}
+#header h2 {
+    font-family: 'Averia Serif Libre', times, serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
 
 #nav-wrapper {
-    border-bottom: 1px solid #ccc;
-    width: 100%;
 }
 
 #nav {
-    background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Averia Serif Libre', times, serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -130,16 +136,11 @@ textarea {
 }
 
 #nav li {
-    border-right: 1px solid #ccc;
     display: inline-block;
+    font-size: 1.6rem;
     font-weight: 600;
     margin: 0;
     padding: 1rem 2rem;
-    text-transform: uppercase;
-}
-
-#nav li:first-child {
-    border-left: 1px solid #ccc;
 }
 
 #nav li a {
@@ -147,7 +148,12 @@ textarea {
     text-decoration: none;
 }
 
-#nav li a:hover {}
+#nav li a:hover {
+    background-image: url('../img/div_chunky.png');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    padding-bottom: 8px;
+}
 
 #nav .current {}
 
@@ -162,6 +168,7 @@ textarea {
 #content {}
 
 #canvas {
+    margin: 2rem 0;
     position: relative;
 }
 
@@ -169,8 +176,9 @@ textarea {
 
 .cartoon-block {
     background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     box-sizing: border-box;
-    margin-top: 2rem;
+    min-height: 24rem;
     padding: 1rem;
     text-align: center;
 }
@@ -186,18 +194,20 @@ textarea {
 .cartoon-caption {}
 
 .or {
-    background-color: #000;
+    background-color: #e64b4b;
     border-radius: 50%;
-    color: #fff;
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.4);
+    color: #000;
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gochi Hand', Arial, sans-serif;
     font-size: 1.4rem;
     height: 3rem;
     left: 50%;
     line-height: 3rem;
-    margin-left: -1.5rem;
+    margin: -1.5rem 0 0 -1.5rem;
     position: absolute;
     text-align: center;
+    text-shadow: 1px 2px 0 #fff;
     top: 50%;
     width: 3rem;
 }
@@ -209,6 +219,7 @@ textarea {
 }
 
 #toolbar {
+    padding: 2rem 0;
     text-align: center;
 }
 
