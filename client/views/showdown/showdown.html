@@ -1,3 +1,60 @@
 <template name="showdown">
-    Hell World
+    <div id="header-wrapper" class="wrapper">
+        <div id="header" class="container">
+            <h2>Very Semi-Serious presents</h2>
+            <h1>HumorLab</h1>
+        </div>
+    </div>
+
+    <div id="nav-wrapper" class="wrapper clearfix">
+        <ul id="nav" class="prefix_4 grid_8">
+            <li><a href="#">Browse</a></li>
+            <li><a href="#" class="current">Play</a></li>
+            <li><a href="#">Submit your own</a></li>
+        </ul>
+    </div>
+
+    <div id="content-wrapper" class="wrapper">
+        <div id="content" class="container">
+            <div id="canvas" class="clearfix">
+                <div class="grid_6 cartoon-block cartoon-1 selected" data-won="40" data-total="65" data-rank="1533">
+                    <img class="cartoon-image" src="img/cartoon_1_orig_cat-mouse-gun.png" alt=""/>
+                    <span class="cartoon-caption">Six rounds. Nine lives. You do the math.</span>
+                </div>
+
+                <div class="or">or</div>
+
+                <div class="grid_6 omega cartoon-block cartoon-2" data-won="100" data-total="265" data-rank="5016">
+                    <img class="cartoon-image" src="img/cartoon_1_orig_cat-mouse-gun.png" alt=""/>
+                    <span class="cartoon-caption">Hey, I got nine kids, a dental floss problem, and an owner with a laser pointer &mdash; you'd be doing me a favor.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolbar-wrapper" class="wrapper">
+        <div id="toolbar" class="container">
+            <div class="grid_12">
+                <a class="submit button" href="#" title="Oh? You think you can do better?">Submit your own</a>
+                <a class="skip button" href="#" title="Yeah, I thought it was terrible, too.">Skip this cartoon</a>
+                <a class="next button hidden" href="#" title="Let's keep up the hustle.">Go to the next cartoon</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="resources-wrapper" class="wrapper hidden">
+        <div id="resources" class="container">
+            <div class="grid_12">
+                <p>This is where Bob lives!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-wrapper" class="wrapper">
+        <div id="footer" class="container">
+            <div class="grid_12">
+                <span>&copy; 2013</span>
+            </div>
+        </div>
+    </div>
 </template>
