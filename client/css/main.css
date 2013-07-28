@@ -363,7 +363,7 @@ textarea {
     height: 121px;
     overflow: visible;
     position: fixed;
-    right: 0;
+    right: 2rem;
     width: 122px;
     z-index: 2;
     bottom: 10rem;
@@ -372,6 +372,10 @@ textarea {
     -webkit-transition: right .5s ease-in;
     -o-transition: right .5s ease-in;
     transition: right .5s ease-in;
+}
+
+#bob.peek {
+    right: -15rem;
 }
 
 #bob:hover {
