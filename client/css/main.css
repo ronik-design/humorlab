@@ -383,6 +383,14 @@ textarea {
     right: -12rem;
 }
 
+#bob .tip {
+    position: absolute;
+    bottom: -35px;
+    margin: 0;
+    right: 0;
+    text-align: center;
+}
+
 #bob:hover {
     cursor: pointer;
 }
