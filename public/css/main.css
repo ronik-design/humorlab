@@ -145,11 +145,19 @@ textarea {
 }
 
 #nav li a {
+    background-position: center bottom;
     color: #333;
+    padding-bottom: 2px;
     text-decoration: none;
+
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
 }
 
 #nav li a:hover {
+    color: #e64b4b;
     background-image: url('../img/div_chunky.png');
     background-repeat: repeat-x;
     background-position: center bottom;
@@ -233,31 +241,41 @@ textarea {
 }
 
 #toolbar {
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
 .button {
+    background-image: url('../img/button_watercolor.png');
+    color: #333;
     display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
+    font-family: "Paytone One", Arial, sans-serif;
+    font-size: 0.9rem;
     height: 97px;
-    text-indent: -9999px;
+    line-height: 97px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px rgb(255,255,255);
+    text-transform: uppercase;
+    width: 264px;
+
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.button:hover {
+    color: #e64b4b;
 }
 
 .button.submit {
-    background-image: url('../img/button_submit-caption.png');
-    width: 264px;
 }
 
 .button.skip {
-    background-image: url('../img/button_skip-cartoon.png');
-    width: 264px;
 }
 
 .button.next {
-    background-image: url('../img/button_next-cartoon.png');
-    width: 264px;
 }
 
 /* resources */
