@@ -42,15 +42,19 @@ Template.create.events({
     },
 
     'click .difficulty': function (e) {
-        var difficulty = $(e.target).val();
+        var cartoon = Session.get('currentCartoon'),
+            difficulty = $(e.target).val();
 
 
         $('.caption-enter').removeClass('easy, medium, hard').addClass(difficulty);
 
         if (difficulty == 'easy') {
-
+            if(cartoon.setups) {
+                var setup  = getRandom(cartoon.setups);
+                $(".caption-entry").val(setup.text);
+                bob(setup.audio);
+            }
         } else if(difficulty == 'medium') {
-
             bob("/audio/category/categoriesare.wav");
         }
 
@@ -102,7 +106,7 @@ var closing = new buzz.sound('/audio/closing/closing.wav'),
     zinger3 = new buzz.sound('/audio/zinger/zinger3.wav');
 
 var closings = [closing],
-    compliments = [compliment1, compliment2],
+    compliments = [compliment1, compliment2, zinger1, zinger2, zinger3, laugh1, laugh2, laugh3],
     laughs = [laugh1, laugh2, laugh3],
     zingers = [zinger1, zinger2, zinger3];
 
