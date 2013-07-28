@@ -7,7 +7,23 @@
                 </div>
 
                 <div class="grid_10 push_1 caption-enter">
-                    <input class="caption-entry" type="text" placeholder="Enter your caption here for the chance of eternal fame and glory."/>
+                    <form>
+                        <ol class="difficulty-selector">
+                            <li>
+                                <input type="radio" class="difficulty difficulty-easy" name="difficulty" id="difficulty-easy" value="1"/>
+                                <label for="difficulty-easy">Easy</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="difficulty difficulty-medium" name="difficulty" id="difficulty-medium" value="2"/>
+                                <label for="difficulty-medium">Medium</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="difficulty difficulty-hard" name="difficulty" id="difficulty-hard" value="3" checked="checked"/>
+                                <label for="difficulty-hard">Hard</label>
+                            </li>
+                        </ol>
+                        <input class="caption-entry" type="text" placeholder="Enter your caption here for the chance of eternal fame and glory."/>
+                    </form>
                 </div>
             </div>
         </div>
@@ -16,7 +32,7 @@
     <div id="toolbar-wrapper" class="wrapper">
         <div id="toolbar" class="container">
             <div class="grid_12">
-                <a class="submit button" href="/browse" title="Let's see how it fares, shall we?">Submit this caption</a>
+                <a class="submit button" href="/browse" title="Let's see how it fares, shall we?">Submit your caption</a>
             </div>
         </div>
     </div>

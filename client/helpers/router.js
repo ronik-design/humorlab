@@ -26,3 +26,12 @@ Meteor.Router.add({
         return 'create';
     }
 });
+
+Meteor.Transitioner.setOptions({
+    'after': function(){
+        var pathname = window.location.pathname;
+
+        $('#nav a').removeClass('current');
+        $('#nav a[href="' + pathname + '"]').addClass('current');
+    }
+});

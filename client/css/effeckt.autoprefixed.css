@@ -369,6 +369,11 @@
     color: #3c7762;
 }
 
+.effeckt-caption-3.reveal-data.loser .effeckt-figcaption-wrap {
+    color: #e64b4b;
+}
+
+
 .effeckt-caption-3.reveal-data img {
     -webkit-transform: scale(0.5) translateY(-80px);
     -ms-transform: scale(0.5) translateY(-80px);

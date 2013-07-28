@@ -192,12 +192,17 @@ textarea {
     transition: all .2s;
 }
 
-#nav li a:hover {
+#nav li a:hover,
+#nav li a:active {
     color: #e64b4b;
     background-image: url('/img/div_chunky.png');
     background-repeat: repeat-x;
     background-position: center bottom;
     padding-bottom: 8px;
+}
+
+#nav li a.current {
+    color: #e64b4b;
 }
 
 #nav .current {}
@@ -253,6 +258,10 @@ textarea {
 .cartoon-block.winner.reveal-data {
     border: 5px solid #3c7762;
     cursor: default;
+}
+
+.cartoon-block.loser.reveal-data {
+    border: 5px solid #e64b4b;
 }
 
 
@@ -323,6 +332,7 @@ textarea {
     text-shadow: 2px 2px 0px rgb(255,255,255);
     text-transform: uppercase;
     width: 264px;
+    border: none;
 
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
@@ -454,11 +464,10 @@ textarea {
  * Create
  */
 
-.caption-enter {
+.caption-enter input[type="text"] {
     background-color: rgba(0,0,0,0.2);
     border-radius: .4rem;
     box-shadow: inset 0 0 14px rgba(0,0,0,0.3);
-    margin-top: 2rem;
 }
 
 .caption-entry {
@@ -475,6 +484,21 @@ textarea {
 
 .caption-entry:focus {
     outline: none;
+}
+
+.difficulty-selector {
+    font-size: 1.75em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.difficulty-selector li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 1em;
 }
 
 
