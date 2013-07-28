@@ -40,5 +40,6 @@ Meteor.Transitioner.setOptions({
 
         $('#nav a').removeClass('current');
         $('#nav a[href="' + pathname + '"]').addClass('current');
+        $('#bob').removeClass('peek');
     }
 });
