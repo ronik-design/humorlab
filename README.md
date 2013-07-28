@@ -20,4 +20,6 @@ The Humor Lab aims to be an interactive deconstruction of the beloved New Yorker
 - David Chapman
 
 ## Technology
-
+- CSS3
+- MeteorJS
+- HTML5 Audio
