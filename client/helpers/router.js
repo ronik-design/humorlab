@@ -1,5 +1,10 @@
+var previousShowdown;
+
 Meteor.Router.add({
-    '/showdown' : 'showdown',
+    '/showdown' : function() {
+        Session.set('currentCartoon', randomCartoon());
+        return 'showdown';
+    },
     '/browse' : 'browse',
     '/cartoon/:id': function(id) {
         Session.set('currentCartoon', id);
