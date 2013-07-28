@@ -358,11 +358,16 @@ textarea {
     display: block;
     height: 121px;
     overflow: visible;
-    position: absolute;
-    right: -9rem;
+    position: fixed;
+    right: 0;
     width: 122px;
     z-index: 2;
-    top: -4rem;
+    bottom: 10rem;
+
+    -moz-transition: right .5s ease-in;
+    -webkit-transition: right .5s ease-in;
+    -o-transition: right .5s ease-in;
+    transition: right .5s ease-in;
 }
 
 #bob:hover {
