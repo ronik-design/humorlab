@@ -106,7 +106,7 @@ var closing = new buzz.sound('/audio/closing/closing.wav'),
     zinger3 = new buzz.sound('/audio/zinger/zinger3.wav');
 
 var closings = [closing],
-    compliments = [compliment1, compliment2],
+    compliments = [compliment1, compliment2, zinger1, zinger2, zinger3, laugh1, laugh2, laugh3],
     laughs = [laugh1, laugh2, laugh3],
     zingers = [zinger1, zinger2, zinger3];
 
