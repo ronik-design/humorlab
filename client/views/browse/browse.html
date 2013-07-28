@@ -1,5 +1,9 @@
 <template name="browse">
-  {{#each cartoons}}
-    <a href="/cartoon/{{_id}}"><img src="{{src}}" class="cartoon-browse"/></a>
-  {{/each}}
+    <div id="content-wrapper" class="wrapper">
+        <div id="content" class="container">
+            {{#each cartoons}}
+                <a class="browse-link" href="/cartoon/{{_id}}"><img src="{{src}}" class="cartoon-browse"/></a>
+            {{/each}}
+        </div>
+    </div>
 </template>

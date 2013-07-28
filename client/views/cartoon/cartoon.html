@@ -1,9 +1,12 @@
 <template name="cartoon">
-
-    <img src="{{cartoon.src}}"/>
-    <ul>
-        {{#each captions}}
-            <li>{{text}}</li>
-        {{/each}}
-    </ul>
+    <div id="content-wrapper" class="wrapper">
+        <div id="content" class="container">
+            <img src="{{cartoon.src}}"/>
+            <ul>
+                {{#each captions}}
+                <li>{{text}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 </template>
