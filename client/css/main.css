@@ -233,11 +233,11 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-block {
+.cartoon-choose {
     min-height: 26rem;
 }
 
-.cartoon-block:hover {
+.cartoon-choose:hover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
@@ -267,6 +267,14 @@ textarea {
 
 .reveal-data .cartoon-caption {
     display: none;
+}
+
+.effeckt-figcaption-wrap {
+    padding: 0 1rem;
+}
+
+.ranking {
+    font-family: "Paytone One", Arial, sans-serif;
 }
 
 .or {
