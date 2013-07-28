@@ -192,12 +192,17 @@ textarea {
     transition: all .2s;
 }
 
-#nav li a:hover {
+#nav li a:hover,
+#nav li a:active {
     color: #e64b4b;
     background-image: url('/img/div_chunky.png');
     background-repeat: repeat-x;
     background-position: center bottom;
     padding-bottom: 8px;
+}
+
+#nav li a.current {
+    color: #e64b4b;
 }
 
 #nav .current {}
@@ -253,6 +258,10 @@ textarea {
 .cartoon-block.winner.reveal-data {
     border: 5px solid #3c7762;
     cursor: default;
+}
+
+.cartoon-block.loser.reveal-data {
+    border: 5px solid #e64b4b;
 }
 
 
