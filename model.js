@@ -1,12 +1,3 @@
-/* Users
-
-Ex:
-{
-    name: "Andrew Sprouse",
-}
-*/
-Users = new Meteor.Collection('users');
-
 /* Cartoons
 {
     credit: "Author Name",

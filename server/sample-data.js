@@ -1,15 +1,5 @@
 Meteor.startup(function () {
 
-    if (Users.find().count() === 0) {
-        var names = ["Andrew Sprouse",
-            "David Chapman",
-            "Mark Catalano"];
-
-        _.each(names, function(name){
-            Users.insert({ name: name });
-        });
-    }
-
     var cartoons = [
         {
             src: "/img/cartoon_1_orig_cat-mouse-gun.png",
