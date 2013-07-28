@@ -340,6 +340,10 @@ textarea {
     transition: all .2s;
 }
 
+.button.trans {
+    background-image: url('/img/button_watercolor_trans.png');
+}
+
 .button:hover {
     color: #e64b4b;
 }
