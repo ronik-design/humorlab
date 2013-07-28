@@ -217,8 +217,7 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-block.cartoon-1:hover,
-.cartoon-block.cartoon-2:hover {
+.cartoon-blockhover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
@@ -235,9 +234,6 @@ textarea {
     border: 5px solid #3c7762;
 }
 
-.cartoon-block.cartoon-1 {}
-
-.cartoon-block.cartoon-2 {}
 
 .cartoon-image {
     width: 100%;

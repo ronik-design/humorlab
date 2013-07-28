@@ -8,8 +8,8 @@ Template.showdown.helpers({
             if(captionA) {
                 captionB = randomRecord(Captions, { cartoon: cartoon._id, _id: { $ne : captionA._id } });
 
-                cartoon.captionA = captionA.text;
-                cartoon.captionB = captionB.text;
+                cartoon.optionA = _.extend({src: cartoon.src}, captionA);
+                cartoon.optionB = _.extend({src: cartoon.src}, captionB);
             }
         }
 
@@ -22,5 +22,13 @@ Template.showdown.events({
         e.preventDefault();
 
         Session.set("currentCartoon", randomCartoon());
+    }
+});
+
+Template.option.events({
+    'click .cartoon-block': function (e) {
+        e.preventDefault();
+
+        console.log(this);
     }
 });
