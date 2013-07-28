@@ -332,6 +332,7 @@ textarea {
     text-shadow: 2px 2px 0px rgb(255,255,255);
     text-transform: uppercase;
     width: 264px;
+    border: none;
 
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
