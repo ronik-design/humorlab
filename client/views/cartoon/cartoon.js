@@ -10,7 +10,7 @@ Template.cartoon.helpers({
             return Captions.find({_id: currentCaption});
         }
 
-        return Captions.find({cartoon: Session.get('currentCartoon')});
+        return Captions.find({cartoon: Session.get('currentCartoon')}, {sort: { score: -1}});
     }
 });
 
