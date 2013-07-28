@@ -1,11 +1,11 @@
-Template.hello.greeting = function () {
-    return "Welcome to humorlab. ";
+Template.cartoons.cartoons = function() {
+    var cartoons  = Cartoons.find({});
+    console.log(cartoons);
+    return cartoons;
 };
 
-Template.hello.events({
-    'click input' : function () {
-        // template data, if any, is available in 'this'
-        if (typeof console !== 'undefined')
-            console.log("You pressed the button");
-    }
-});
+Template.cartoons.caption = function() {
+    var caption  = Captions.findOne({cartoon: this._id});
+    return caption ? caption.text : "";
+};
+
