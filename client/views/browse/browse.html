@@ -1,6 +1,5 @@
 <template name="browse">
   {{#each cartoons}}
-    <img src="{{src}}"/>
-    {{caption}}
+    <a href="/cartoon/{{_id}}"><img src="{{src}}"/></a>
   {{/each}}
 </template>
