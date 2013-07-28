@@ -2,15 +2,13 @@
     <div id="content-wrapper" class="wrapper">
         <div id="content" class="container">
             <div id="canvas" class="clearfix">
-                <div class="grid_6 cartoon-block cartoon-single prefix_3 suffix_3" data-won="40" data-total="65" data-rank="1533">
+                <div class="grid_6 cartoon-block cartoon-single push_3" data-won="40" data-total="65" data-rank="1533">
                     <img class="cartoon-image" src="{{cartoon.src}}"/>
-                    <ul class="cartoon-caption-list">
+                    <ol class="cartoon-caption-list">
                         {{#each captions}}
                         <li class="cartoon-caption">{{text}}</li>
                         {{/each}}
-                    </ul>
-                    <img class="cartoon-image" src="{{src}}" alt=""/>
-                    <span class="cartoon-caption">{{captionA}}</span>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -19,7 +17,7 @@
     <div id="toolbar-wrapper" class="wrapper">
         <div id="toolbar" class="container">
             <div class="grid_12">
-                <a class="submit button" href="#" title="Oh? You think you can do better?">Submit your own</a>
+                <a class="submit button" href="#" title="Oh? You think you can do better?">Submit your own caption</a>
             </div>
         </div>
     </div>
