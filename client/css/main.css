@@ -137,10 +137,15 @@ textarea {
 }
 
 #header h1 {
+    color: #e64b4b;
     font-family: "Paytone One", Arial, sans-serif;
     font-size: 3.2rem;
     line-height: 0.8em;
     margin: 0 0 1.2rem;
+}
+
+#header h1 span {
+    color: #f49a9a;
 }
 
 #header h2 {
