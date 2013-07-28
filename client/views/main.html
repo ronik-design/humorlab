@@ -1,10 +1,55 @@
 <head>
+    <meta charset="utf-8">
     <title>Humor Lab brought to you by Very Semi Serious</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,700,300italic|Paytone+One|Gochi+Hand'
+          rel='stylesheet' type='text/css'>
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
+
 <body>
-<div class="container">
+
+    <div id="header-wrapper" class="wrapper">
+        <div id="header" class="container">
+            <h2>Very Semi-Serious presents</h2>
+            <h1>HumorLab</h1>
+        </div>
+    </div>
+
+    <nav id="nav-wrapper" class="wrapper clearfix">
+        <ul id="nav" class="prefix_4 grid_8">
+            <li><a href="#">Browse</a></li>
+            <li><a href="#" class="current">Play</a></li>
+            <li><a href="#">Submit your own</a></li>
+        </ul>
+    </nav>
+
     <div id="main">
         {{renderPage}}
     </div>
-</div>
+
+    <div id="footer-wrapper" class="wrapper">
+        <div id="footer" class="container">
+            <div class="grid_12">
+                <span>&copy; 2013</span>
+            </div>
+        </div>
+    </div>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = '//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
 </body>
