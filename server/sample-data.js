@@ -1,8 +1,10 @@
 Meteor.startup(function () {
 
+
     var cartoons = [
         {
             src: "/img/cartoon_1_orig_cat-mouse-gun.png",
+            insightAudio: '/audio/insight/catmouse.wav',
             categories: [],
             captions: [
                 { text: "Six rounds. Nine lives. You do the math.", score: 4 },
@@ -13,6 +15,7 @@ Meteor.startup(function () {
         },
         {
             src: "/img/cartoon_2_orig_doctor-coffin.png",
+            insightAudio: '/audio/insight/doctor_casket.wav',
             categories: [],
             captions: [
                 { text: "I recommend zombification.", score: 2 },
@@ -23,6 +26,7 @@ Meteor.startup(function () {
         },
         {
             src: "/img/cartoon_3_orig_parked-chariot.png",
+            insightAudio: '/audio/insight/chariot_roman.wav',
             categories: [],
             captions: [
                 { text: "Where I come from, chivalry isn't dead; it just hasn't been invented yet.", score: 3 },
@@ -33,6 +37,7 @@ Meteor.startup(function () {
         },
         {
             src: "/img/cartoon_4_orig_snake-butt.png",
+            insightAudio: '/audio/insight/snake_butt.wav',
             categories: [],
             captions: [
                 { text: "I don't like the way Adam looks at you.", score: 4 },
@@ -43,14 +48,15 @@ Meteor.startup(function () {
         },
         {
             src: "/img/cartoon_5_orig_in-out.png",
+            insightAudio: '/audio/insight/in_out_boxes.wav',
             categories: [
-                "Over-Educated/Qualified",
-                "One Job Better than Other",
-                "Sex",
-                "Corporate Ladder/Internships",
-                "Quit Complaining",
-                "Layoffs",
-                "Majors"
+                { name: "Over-Educated/Qualified", audio: '/audio/category/overeducated.wav' },
+                { name: "One Job Better than Other",audio: '/audio/category/onejobbetter.wav' },
+                { name: "Sex", audio: '/audio/category/sex.wav' },
+                { name: "Corporate Ladder/Internships", audio: '/audio/category/corporateladder.wav' },
+                { name: "Quit Complaining", audio: '/audio/category/quitcomplaining.wav' },
+                { name: "Layoffs", audio: '/audio/category/layoffs.wav' },
+                { name: "Majors", audio: '/audio/category/majors.wav' }
             ],
             captions: [
                 { text: "Roger, everything reminds you of sex.", score: 4 },
@@ -61,17 +67,18 @@ Meteor.startup(function () {
         },
         {
             src: "/img/cartoon_6_orig_small-man.png",
+            insightAudio: '/audio/insight/small_man.wav',
             categories: [
-                "Height",
-                "Sex",
-                "Clothing",
-                "downsizing",
-                "Games",
-                "Body Language",
-                "Wordplay",
-                "Smoking",
-                "Internet",
-                "Pets"
+                { name: "Height", audio: '/audio/category/height.wav' },
+                { name: "Sex", audio: '/audio/category/sex.wav' },
+                { name: "Clothing", audio: '/audio/category/clothing.wav' },
+                { name: "downsizing", audio: '/audio/category/downsizing.wav' },
+                { name: "Games", audio: '/audio/category/games.wav' },
+                { name: "Body Language", audio: '/audio/category/bodylanguage.wav' },
+                { name: "Wordplay", audio: '/audio/category/wordplay.wav' },
+                { name: "Smoking", audio: '/audio/category/smoking.wav' },
+                { name: "Internet", audio: '/audio/category/internet.wav' },
+                { name: "Pets", audio: '/audio/category/pets.wav' }
             ],
             captions: [
                 { text: "We met at the mini bar.", score: 4 },
@@ -81,7 +88,6 @@ Meteor.startup(function () {
             ]
         }
     ];
-
 
     if (Cartoons.find().count() === 0) {
         _.each(cartoons, function(cartoon) {
