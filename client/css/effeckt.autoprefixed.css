@@ -366,6 +366,10 @@
     transition-delay: 0.25s;
 }
 
+.effeckt-caption-3.reveal-data.winner .effeckt-figcaption-wrap {
+    color: #3c7762;
+}
+
 .effeckt-caption-3.reveal-data img,
 .effeckt-caption-3:active img {
     -webkit-transform: scale(0.5) translateY(-80px);
