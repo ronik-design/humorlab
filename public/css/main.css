@@ -19,7 +19,8 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-family: 'Times New Roman', times, serif;
+    font-size: 10px;
     line-height: 1.4;
 }
 
@@ -93,17 +94,165 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.wrapper {
+    width: 100%;
+}
 
+/**
+ * Header
+ */
+#header-wrapper {
+    background-color: #5f1542;
+}
 
+#header {
+    color: #fff;
+    text-align: center;
+}
 
+#header h1 {}
 
+#header h2 {}
 
+#nav-wrapper {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
 
+#nav {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
 
+#nav li {
+    border-right: 1px solid #ccc;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
 
+#nav li:first-child {
+    border-left: 1px solid #ccc;
+}
 
+#nav li a {
+    color: #333;
+    text-decoration: none;
+}
 
+#nav li a:hover {}
 
+#nav .current {}
+
+/**
+ * Content
+ */
+
+#content-wrapper {
+    background-image: url('../img/tile_light-grunge.png');
+}
+
+#content {}
+
+#canvas {
+    position: relative;
+}
+
+/* cartoon */
+
+.cartoon-block {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cartoon-block.cartoon-1 {}
+
+.cartoon-block.cartoon-2 {}
+
+.cartoon-image {
+    width: 100%;
+}
+
+.cartoon-caption {}
+
+.or {
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    height: 3rem;
+    left: 50%;
+    line-height: 3rem;
+    margin-left: -1.5rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 3rem;
+}
+
+/* toolbar */
+
+#toolbar-wrapper {
+    border-top: 1px solid #ccc;
+}
+
+#toolbar {
+    text-align: center;
+}
+
+.button {
+    border: 2px solid #333;
+    color: #333;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.button:hover {}
+
+.button.submit {}
+
+.button.skip {}
+
+.button.next {}
+
+/* resources */
+
+#resources-wrapper {}
+
+#resources {}
+
+/**
+ * Footer
+ */
+
+#footer-wrapper {
+    background-color: #111;
+    width: 100%;
+}
+
+#footer {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#footer span {}
 
 
 
