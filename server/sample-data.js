@@ -70,16 +70,21 @@ Meteor.startup(function () {
         }
     ];
 
+
     if (Cartoons.find().count() === 0) {
         _.each(cartoons, function(cartoon) {
             var captions = cartoon.captions,
                 filtered = _.omit(cartoon, "captions"),
-                id = Cartoons.insert(filtered);
+                id;
+
+            filtered.random = Math.random();
+
+            id = Cartoons.insert(filtered);
 
 
             if(id) {
                 _.each(captions, function(caption) {
-                    Captions.insert({ cartoon: id, text: caption });
+                    Captions.insert({ cartoon: id, text: caption, random: Math.random() });
                 });
             }
         });
