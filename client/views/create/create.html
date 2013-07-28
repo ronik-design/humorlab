@@ -2,9 +2,12 @@
     <div id="content-wrapper" class="wrapper">
         <div id="content" class="container">
             <div id="canvas" class="clearfix">
-                <div class="grid_6 cartoon-block cartoon-single">
+                <div class="grid_6 cartoon-block cartoon-create push_3">
                     <img class="cartoon-image" src="{{cartoon.src}}" alt=""/>
-                    <span class="cartoon-caption">CAPT</span>
+                </div>
+
+                <div class="grid_10 push_1 caption-enter">
+                    <input class="caption-entry" type="text" placeholder="Enter your caption here for the chance of eternal fame and glory."/>
                 </div>
             </div>
         </div>
@@ -13,9 +16,7 @@
     <div id="toolbar-wrapper" class="wrapper">
         <div id="toolbar" class="container">
             <div class="grid_12">
-                <a class="submit button" href="#" title="Oh? You think you can do better?">Submit your own caption</a>
-                <a class="skip button" href="#" title="Yeah, I thought it was terrible, too.">Skip this showdown</a>
-                <a class="next button hidden" href="#" title="Let's keep up the hustle.">Go to the next showdown</a>
+                <a class="submit button" href="/browse" title="Let's see how it fares, shall we?">Submit this caption</a>
             </div>
         </div>
     </div>

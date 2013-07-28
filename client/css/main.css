@@ -89,6 +89,23 @@ textarea {
     resize: vertical;
 }
 
+/*
+ * Slightly darker placeholder text
+ */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #666;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #666;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #666;
+}
+
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
@@ -206,7 +223,6 @@ textarea {
     background-color: #fff;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     box-sizing: border-box;
-    min-height: 26rem;
     padding: 1rem;
     text-align: center;
     z-index: 2;
@@ -217,21 +233,26 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-blockhover {
+.cartoon-block {
+    min-height: 26rem;
+}
+
+.cartoon-block:hover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
 
 .cartoon-block.reveal-data:hover {
-    border: 5px solid #FFF;
+    border: 5px solid #fff;
 }
 
 .cartoon-block.reveal-data {
-    border: 5px solid #FFF;
+    border: 5px solid #fff;
 }
 
 .cartoon-block.winner.reveal-data {
     border: 5px solid #3c7762;
+    cursor: default;
 }
 
 
@@ -372,7 +393,32 @@ textarea {
     text-align: left;
 }
 
+/**
+ * Create
+ */
 
+.caption-enter {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: .4rem;
+    box-shadow: inset 0 0 14px rgba(0,0,0,0.3);
+    margin-top: 2rem;
+}
+
+.caption-entry {
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Averia Serif Libre", times, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.caption-entry:focus {
+    outline: none;
+}
 
 
 /* ==========================================================================
