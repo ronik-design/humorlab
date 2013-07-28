@@ -22,14 +22,14 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="header" class="container">
-            <div class="grid_12">
-                <h1 id="title">HumorLab</h1>
-                <h2 id="subtitle">presented by <a href="http://www.verysemiserious.com/">Very Semi-Serious</a></h2>
-            </div>
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <div id="title" class="grid_12">
+                    <h2>Very Semi-Serious presents</h2>
+                    <h1>HumorLab</h1>
+                </div>
 
-            <div class="prefix_4 grid_8">
-                <ul id="page-nav">
+                <ul id="page-nav" class="prefix_4 grid_8">
                     <li><a href="#">Browse</a></li>
                     <li><a href="#" class="current">Play</a></li>
                     <li><a href="#">Submit your own</a></li>
@@ -37,37 +37,19 @@
             </div>
         </div>
 
-        <div id="content-wrapper" class="wrapper">
+        <div id="content-wrapper">
             <div id="content" class="container">
-                <div id="canvas" class="grid_12">
-                    <div class="grid_6 alpha">
-                        <div class="cartoon-block cartoon-1 selected" data-won="40" data-total="65">
-                            <div class="cartoon-information">
-                                <h2 class="cartoon-ratio">40 <span>out of</span> 65</h2>
-                                <h3 class="cartoon-explanation">people chose this caption over its competitor. Great minds think alike!</h3>
-                                <h4 class="cartoon-rank">Ranked #1,533 globally</h4>
-                            </div>
-
-                            <a href="#">
-                                <img class="cartoon-image" src="http://lorempixel.com/480/360" alt=""/>
-                            </a>
-                        </div>
+                <div id="canvas" class="clearfix">
+                    <div class="grid_6 cartoon-block cartoon-1 selected" data-won="40" data-total="65" data-rank="1533">
+                        <img class="cartoon-image" src="img/cartoon_1_orig_cat-mouse-gun.png" alt=""/>
+                        <span class="cartoon-caption">Six rounds. Nine lives. You do the math.</span>
                     </div>
 
-                    <!--<div class="or">or</div>-->
+                    <div class="or">or</div>
 
-                    <div class="grid_6 omega">
-                        <div class="cartoon-block cartoon-2" data-won="100" data-total="265">
-                            <div class="cartoon-information">
-                                <h2 class="cartoon-ratio">10 <span>out of</span> 165</h2>
-                                <h3 class="cartoon-explanation">people chose this caption over its competitor. They chose...poorly.</h3>
-                                <h4 class="cartoon-rank">Ranked #5,016 globally</h4>
-                            </div>
-
-                            <a href="#">
-                                <img class="cartoon-image" src="http://lorempixel.com/480/360" alt=""/>
-                            </a>
-                        </div>
+                    <div class="grid_6 omega cartoon-block cartoon-2" data-won="100" data-total="265" data-rank="5016">
+                        <img class="cartoon-image" src="img/cartoon_1_orig_cat-mouse-gun.png" alt=""/>
+                        <span class="cartoon-caption">Hey, I got nine kids, a dental floss problem, and an owner with a laser pointer &mdash; you'd be doing me a favor.</span>
                     </div>
                 </div>
 
@@ -87,9 +69,11 @@
             </div>
         </div>
 
-        <div id="footer" class="container">
-            <div class="grid_12">
-                <span>&copy; 2013</span>
+        <div id="footer-wrapper">
+            <div id="footer" class="container">
+                <div class="grid_12">
+                    <span>&copy; 2013</span>
+                </div>
             </div>
         </div>
 
