@@ -53,8 +53,10 @@ Meteor.startup(function () {
                 "Majors"
             ],
             captions: [
-                { text: "told you silicone was non digestible.", score: 0 },
-                { text: "told you silicone was non digestible.", score: 0 }
+                { text: "Roger, everything reminds you of sex.", score: 4 },
+                { text: "Last internship I was a coatrack.", score: 3 },
+                { text: "Your mornings can't be any worse than my afternoons.", score: 2 },
+                { text: "I'm a fan of your work.", score: 1 }
             ]
         },
         {
@@ -72,8 +74,10 @@ Meteor.startup(function () {
                 "Pets"
             ],
             captions: [
-                { text: "told you silicone was non digestible.", score: 0 },
-                { text: "told you silicone was non digestible.", score: 0 }
+                { text: "We met at the mini bar.", score: 4 },
+                { text: "Larry can't tell you about his current project--it's top secret.", score: 2 },
+                { text: "Whatever you do, don't agree to play hide-and-seek with him.", score: 3 },
+                { text: "The ad said, 'escort at half-price,' I figured how bad could he be?", score: 1 }
             ]
         }
     ];
