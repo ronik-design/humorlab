@@ -26,23 +26,35 @@
         }
 
         #start-button {
-            display: none;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            font-size: 1.4rem;
-            line-height: 7.8rem;
-            height: 9rem;
+            background-color: #e64b4b;
             background-repeat: no-repeat;
+            border-radius: 0.4rem;
+            box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.4);
+            color: #333;
+            display: none;
+            font-family: "Paytone One", Arial, sans-serif;
+            font-size: 1.4rem;
+            height: 4rem;
+            left: 50%;
+            line-height: 4rem;
+            margin-left: -7rem;
+            margin-top: -2rem;
+            position: absolute;
             text-align: center;
-            width: 17.4rem;
-            margin-left: -8.7rem;
-            margin-top: -4.5rem;
+            text-decoration: none;
+            text-shadow: 2px 2px 0px rgb(255,255,255);
+            text-transform: uppercase;
+            top: 50%;
+            width: 14rem;
 
             -moz-transition: all .8s;
             -webkit-transition: all .8s;
             -o-transition: all .8s;
             transition: all .8s;
+        }
+
+        #start-button:hover {
+            background-color: #fff;
         }
     </style>
 </head>
@@ -75,11 +87,11 @@
         _V_("#big-video-vid_html5_api" || "#big-video-vid_flash_api").ready(function(){
             this.on("timeupdate", function(){
 
-                if(this.currentTime() >= 14) {
+                if(this.currentTime() >= 15) {
                     $('#start-button').show();
                 }
 
-                if(this.currentTime() >= 38.8) {
+                if(this.currentTime() >= 38.9) {
                     this.pause();
                 }
             });
