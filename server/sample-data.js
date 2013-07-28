@@ -58,6 +58,13 @@ Meteor.startup(function () {
                 { name: "Layoffs", audio: '/audio/category/layoffs.wav' },
                 { name: "Majors", audio: '/audio/category/majors.wav' }
             ],
+            setups: [
+                "Wanna",
+                "On the bright side",
+                "Do you ever feel",
+                "This is not what I had in mind when",
+                "Just be glad you didn’t get"
+            ],
             captions: [
                 { text: "Roger, everything reminds you of sex.", score: 4 },
                 { text: "Last internship I was a coatrack.", score: 3 },
@@ -79,6 +86,14 @@ Meteor.startup(function () {
                 { name: "Smoking", audio: '/audio/category/smoking.wav' },
                 { name: "Internet", audio: '/audio/category/internet.wav' },
                 { name: "Pets", audio: '/audio/category/pets.wav' }
+            ],
+            setups: [
+                "The good news is",
+                "We met at the",
+                "You should see him",
+                "He hates it when",
+                "I got him on",
+                "I got him at"
             ],
             captions: [
                 { text: "We met at the mini bar.", score: 4 },
