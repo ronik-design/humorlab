@@ -10,10 +10,9 @@ Meteor.startup(function () {
         });
     }
 
-
     var cartoons = [
         {
-            src: "img/cartoon_1_orig_cat-mouse-gun.png",
+            src: "/img/cartoon_1_orig_cat-mouse-gun.png",
             categories: [],
             captions: [
                 "Six rounds. Nine lives. You do the math.",
@@ -23,7 +22,7 @@ Meteor.startup(function () {
             ]
         },
         {
-            src: "img/cartoon_2_orig_doctor-coffin.png",
+            src: "/img/cartoon_2_orig_doctor-coffin.png",
             categories: [],
             captions: [
                 "I recommend zombification.",
@@ -33,7 +32,7 @@ Meteor.startup(function () {
             ]
         },
         {
-            src: "img/cartoon_3_orig_parked-chariot.png",
+            src: "/img/cartoon_3_orig_parked-chariot.png",
             categories: [],
             captions: [
                 "Where I come from, chivalry isn't dead; it just hasn't been invented yet.",
@@ -43,7 +42,7 @@ Meteor.startup(function () {
             ]
         },
         {
-            src: "img/cartoon_4_orig_snake-butt.png",
+            src: "/img/cartoon_4_orig_snake-butt.png",
             categories: [],
             captions: [
                 "told you silicone was non digestible.",
@@ -51,7 +50,7 @@ Meteor.startup(function () {
             ]
         },
         {
-            src: "img/cartoon_5_orig_in-out.png",
+            src: "/img/cartoon_5_orig_in-out.png",
             categories: [
                 "Over-Educated/Qualified",
                 "One Job Better than Other",
@@ -64,7 +63,7 @@ Meteor.startup(function () {
             captions: []
         },
         {
-            src: "img/cartoon_6_orig_small-man.png",
+            src: "/img/cartoon_6_orig_small-man.png",
             categories: [
                 "Height",
                 "Sex",
