@@ -20,12 +20,19 @@ Meteor.Router.add({
 
         return 'cartoon';
     },
-    '/create/:id' : function(id) {
-        Session.set('currentCartoon', id);
-
-        return 'create';
-    }
+    '/create': handleCreate,
+    '/create/:id': handleCreate
 });
+
+function handleCreate(id) {
+    if(id) {
+        var cartoon = Cartoons.findOne({_id: id});
+    }
+
+    Session.set('currentCartoon', cartoon ? cartoon : randomCartoon());
+
+    return 'create';
+}
 
 Meteor.Transitioner.setOptions({
     'after': function(){
