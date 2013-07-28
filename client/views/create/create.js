@@ -42,15 +42,19 @@ Template.create.events({
     },
 
     'click .difficulty': function (e) {
-        var difficulty = $(e.target).val();
+        var cartoon = Session.get('currentCartoon'),
+            difficulty = $(e.target).val();
 
 
         $('.caption-enter').removeClass('easy, medium, hard').addClass(difficulty);
 
         if (difficulty == 'easy') {
-
+            if(cartoon.setups) {
+                var setup  = getRandom(cartoon.setups);
+                $(".caption-entry").val(setup.text);
+                bob(setup.audio);
+            }
         } else if(difficulty == 'medium') {
-
             bob("/audio/category/categoriesare.wav");
         }
 

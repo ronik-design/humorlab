@@ -59,11 +59,11 @@ Meteor.startup(function () {
                 { name: "Majors", audio: '/audio/category/majors.wav' }
             ],
             setups: [
-                "Wanna",
-                "On the bright side",
-                "Do you ever feel",
-                "This is not what I had in mind when",
-                "Just be glad you didn’t get"
+                { text: "Wanna", audio: '/audio/category/wanna.wav' },
+                { text: "On the bright side", audio: '/audio/category/on_the_brightside.wav' },
+                { text: "Do you ever feel", audio: '/audio/category/do_you_ever_feel.wav' },
+                { text: "This is not what I had in mind when", audio: '/audio/category/this_is_not_what_i_had_in_mind_when.wav' },
+                { text: "Just be glad you didn’t get", audio: '/audio/category/just_be_glad_you_didnt_get.wav' }
             ],
             captions: [
                 { text: "Roger, everything reminds you of sex.", score: 4 },
@@ -88,12 +88,12 @@ Meteor.startup(function () {
                 { name: "Pets", audio: '/audio/category/pets.wav' }
             ],
             setups: [
-                "The good news is",
-                "We met at the",
-                "You should see him",
-                "He hates it when",
-                "I got him on",
-                "I got him at"
+                { text: "The good news is", audio: "/audio/setup/the_good_news_is.wav" },
+                { text: "We met at the", audio: "/audio/setup/we_met_at_he.wav" },
+                { text: "You should see him", audio: "/audio/setup/you_should_see_him.wav" },
+                { text: "He hates it when", audio: "/audio/setup/he_hates_it_when.wav" },
+                { text: "I got him on", audio: "/audio/setup/i_got_him_on.wav" },
+                { text: "I got him at", audio: "/audio/setup/i_got_him_at.wav" }
             ],
             captions: [
                 { text: "We met at the mini bar.", score: 4 },
