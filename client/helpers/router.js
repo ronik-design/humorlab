@@ -14,5 +14,10 @@ Meteor.Router.add({
         Session.set('currentCaption', id);
 
         return 'cartoon';
+    },
+    '/create/:id' : function(id) {
+        Session.set('currentCartoon', id);
+
+        return 'create';
     }
 });

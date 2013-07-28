@@ -206,7 +206,6 @@ textarea {
     background-color: #fff;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     box-sizing: border-box;
-    cursor: pointer;
     min-height: 26rem;
     padding: 1rem;
     text-align: center;
@@ -218,8 +217,10 @@ textarea {
     transition: all .3s;
 }
 
-.cartoon-block:hover {
+.cartoon-block.cartoon-1:hover,
+.cartoon-block.cartoon-2:hover {
     border: 5px solid #e64b4b;
+    cursor: pointer;
 }
 
 .cartoon-block.reveal-data:hover {
@@ -363,6 +364,19 @@ textarea {
     vertical-align: top;
     width: 100%;
 }
+
+/**
+ * Cartoon
+ */
+
+.cartoon-caption-list {
+}
+
+.cartoon-caption-list li {
+    text-align: left;
+}
+
+
 
 
 /* ==========================================================================
