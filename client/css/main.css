@@ -80,6 +80,23 @@ textarea {
     resize: vertical;
 }
 
+/*
+ * Slightly darker placeholder text
+ */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #666;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #666;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #666;
+}
+
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
@@ -197,7 +214,6 @@ textarea {
     background-color: #fff;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     box-sizing: border-box;
-    min-height: 26rem;
     padding: 1rem;
     text-align: center;
 
@@ -207,15 +223,16 @@ textarea {
     transition: all .3s;
 }
 
+.cartoon-block.cartoon-1,
+.cartoon-block.cartoon-2 {
+    min-height: 26rem;
+}
+
 .cartoon-block.cartoon-1:hover,
 .cartoon-block.cartoon-2:hover {
     border: 5px solid #e64b4b;
     cursor: pointer;
 }
-
-.cartoon-block.cartoon-1 {}
-
-.cartoon-block.cartoon-2 {}
 
 .cartoon-image {
     width: 100%;
@@ -349,7 +366,31 @@ textarea {
     text-align: left;
 }
 
+/**
+ * Create
+ */
 
+.caption-enter {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: .4rem;
+    margin-top: 2rem;
+}
+
+.caption-entry {
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Averia Serif Libre", times, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.caption-entry:focus {
+    outline: none;
+}
 
 
 /* ==========================================================================
