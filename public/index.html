@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -21,71 +22,74 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="header-wrapper" class="wrapper">
-            <div id="header" class="container">
-                <h1>The Crazy Header!</h1>
+        <div id="header" class="container">
+            <div class="grid_12">
+                <h1 id="title">HumorLab</h1>
+                <h2 id="subtitle">presented by <a href="http://www.verysemiserious.com/">Very Semi-Serious</a></h2>
+            </div>
 
-                <ul id="page-nav" class="navigation">
+            <div class="prefix_4 grid_8">
+                <ul id="page-nav">
                     <li><a href="#">Browse</a></li>
                     <li><a href="#" class="current">Play</a></li>
-                    <li><a href="#">Make your own</a></li>
+                    <li><a href="#">Submit your own</a></li>
                 </ul>
-            </div>
-        </div>
-
-        <div id="notifications-wrapper" class="wrapper">
-            <div id="notifications" class="container hidden">
-                <p>This is a notification</p>
             </div>
         </div>
 
         <div id="content-wrapper" class="wrapper">
             <div id="content" class="container">
-                <div id="bob">
-                    <span>This is Bob!</span>
-                </div>
+                <div id="canvas" class="grid_12">
+                    <div class="grid_6 alpha">
+                        <div class="cartoon-block cartoon-1 selected" data-won="40" data-total="65">
+                            <div class="cartoon-information">
+                                <h2 class="cartoon-ratio">40 <span>out of</span> 65</h2>
+                                <h3 class="cartoon-explanation">people chose this caption over its competitor. Great minds think alike!</h3>
+                                <h4 class="cartoon-rank">Ranked #1,533 globally</h4>
+                            </div>
 
-                <div id="canvas">
-                    <div class="cartoon-block cartoon-1 selected" data-won="40" data-total="65">
-
-                        <div class="cartoon-information">
-                            <h2 class="cartoon-ratio">40 <span>out of</span> 65</h2>
-                            <h3 class="cartoon-explanation">people chose this caption over its competitor. Great minds think alike!</h3>
-                            <h4 class="cartoon-rank">Ranked #1,533 globally</h4>
+                            <a href="#">
+                                <img class="cartoon-image" src="http://lorempixel.com/480/360" alt=""/>
+                            </a>
                         </div>
-
-                        <a href="#">
-                            <img class="cartoon-image" src="http://lorempixel.com/480/360" alt=""/>
-                        </a>
                     </div>
 
-                    <div class="or">or</div>
+                    <!--<div class="or">or</div>-->
 
-                    <div class="cartoon-block cartoon-2" data-won="100" data-total="265">
+                    <div class="grid_6 omega">
+                        <div class="cartoon-block cartoon-2" data-won="100" data-total="265">
+                            <div class="cartoon-information">
+                                <h2 class="cartoon-ratio">10 <span>out of</span> 165</h2>
+                                <h3 class="cartoon-explanation">people chose this caption over its competitor. They chose...poorly.</h3>
+                                <h4 class="cartoon-rank">Ranked #5,016 globally</h4>
+                            </div>
 
-                        <div class="cartoon-information">
-                            <h2 class="cartoon-ratio">10 <span>out of</span> 165</h2>
-                            <h3 class="cartoon-explanation">people chose this caption over its competitor. They chose...poorly.</h3>
-                            <h4 class="cartoon-rank">Ranked #5,016 globally</h4>
+                            <a href="#">
+                                <img class="cartoon-image" src="http://lorempixel.com/480/360" alt=""/>
+                            </a>
                         </div>
-
-                        <a href="#">
-                            <img class="cartoon-image" src="http://lorempixel.com/480/360" alt=""/>
-                        </a>
                     </div>
                 </div>
 
                 <div id="toolbar">
-                    <a class="submit button" href="#" title="Oh? You think you can do better?">Submit your own</a>
-                    <a class="skip button" href="#" title="Yeah, I thought it was terrible, too.">Skip this cartoon</a>
-                    <a class="next button hidden" href="#" title="Let's keep up the hustle.">Go to the next cartoon</a>
+                    <div class="grid_12">
+                        <a class="submit button" href="#" title="Oh? You think you can do better?">Submit your own</a>
+                        <a class="skip button hidden" href="#" title="Yeah, I thought it was terrible, too.">Skip this cartoon</a>
+                        <a class="next button" href="#" title="Let's keep up the hustle.">Go to the next cartoon</a>
+                    </div>
+                </div>
+
+                <div id="resources" class="container">
+                    <div class="grid_12">
+                        <p>This is where Bob lives!</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="footer-wrapper" class="wrapper">
-            <div id="footer" class="container">
-                <span>Some awesome footer text</span>
+        <div id="footer" class="container">
+            <div class="grid_12">
+                <span>&copy; 2013</span>
             </div>
         </div>
 
