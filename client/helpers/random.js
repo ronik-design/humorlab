@@ -1,9 +1,10 @@
 randomRecord = function (collection, criteria) {
     var rand = Math.random(),
-        result = collection.findOne(_.extend({ random : { $gte : rand } }, criteria), {sort: { random: 1 } });
+        options = {sort: { random: 1 }, reactive: false },
+        result = collection.findOne(_.extend({ random : { $gte : rand } }, criteria), options);
 
     if ( result == null ) {
-        result = collection.findOne(_.extend({ random : { $lte : rand } }, criteria), {sort: { random: 1 } });
+        result = collection.findOne(_.extend({ random : { $lte : rand } }, criteria), options);
     }
 
     return result;
