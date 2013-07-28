@@ -358,8 +358,7 @@
     font-weight: bold;
 }
 
-.effeckt-caption-3.reveal-data .effeckt-figcaption-wrap,
-.effeckt-caption-3:active .effeckt-figcaption-wrap {
+.effeckt-caption-3.reveal-data .effeckt-figcaption-wrap {
     opacity: 1;
     -webkit-transition-delay: 0.25s;
     -o-transition-delay: 0.25s;
@@ -370,8 +369,7 @@
     color: #3c7762;
 }
 
-.effeckt-caption-3.reveal-data img,
-.effeckt-caption-3:active img {
+.effeckt-caption-3.reveal-data img {
     -webkit-transform: scale(0.5) translateY(-80px);
     -ms-transform: scale(0.5) translateY(-80px);
     -o-transform: scale(0.5) translateY(-80px);
