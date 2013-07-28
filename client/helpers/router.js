@@ -1,4 +1,4 @@
 Meteor.Router.add({
-    '/' : 'chooser',
+    '/showdown' : 'showdown',
     '/browse' : 'browse'
 });
