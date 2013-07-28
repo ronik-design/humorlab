@@ -13,6 +13,11 @@ The Humor Lab aims to be an interactive deconstruction of the beloved New Yorker
 - Bob Mankoff's Ted Talk: http://www.ted.com/talks/bob_mankoff_anatomy_of_a_new_yorker_cartoon.html
 
 ## Team
+- Leah Wolchok
+- Andrew Sprouse
+- Joanna Sokolowski
+- Mark Catalano
+- David Chapman
 
 ## Technology
 
