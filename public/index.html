@@ -28,15 +28,18 @@
         #start-button {
             background-color: #e64b4b;
             background-repeat: no-repeat;
+            border: 5px solid #e64b4b;
             border-radius: 0.4rem;
             box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.4);
             color: #333;
-            display: none;
+            display: block;
+            visibility: hidden;
+            opacity: 0;
             font-family: "Paytone One", Arial, sans-serif;
             font-size: 1.4rem;
-            height: 4rem;
+            height: 55px;
             left: 70%;
-            line-height: 4rem;
+            line-height: 55px;
             margin-left: -7rem;
             margin-top: -2rem;
             position: absolute;
@@ -47,14 +50,25 @@
             top: 50%;
             width: 14rem;
 
-            -moz-transition: all .8s;
-            -webkit-transition: all .8s;
-            -o-transition: all .8s;
-            transition: all .8s;
+            -moz-transition: visibility 0s linear, opacity 0.5s linear 0.5s, background-color .8s;
+            -webkit-transition: visibility 0s linear, opacity 0.5s linear 0.5s, background-color .8s;
+            -o-transition: visibility 0s linear, opacity 0.5s linear 0.5s, background-color .8s;
+            transition: visibility 0s linear, opacity 0.5s linear 0.5s, background-color .8s;
+        }
+
+        #start-button.visible {
+            visibility: visible;
+            opacity: 1;
         }
 
         #start-button:hover {
             background-color: #fff;
+            border-color: #FFF;
+        }
+
+        #start-button:active {
+            background-color: #fff;
+            border-color: #e64b4b;
         }
     </style>
 </head>
@@ -88,7 +102,7 @@
             this.on("timeupdate", function(){
 
                 if(this.currentTime() >= 15) {
-                    $('#start-button').show();
+                    $('#start-button').addClass('visible');
                 }
 
                 if(this.currentTime() >= 38.9) {
