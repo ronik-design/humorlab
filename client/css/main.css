@@ -161,6 +161,11 @@ body {
     color: #f49a9a;
 }
 
+#header h1 a {
+    text-decoration: none;
+    color: #e64b4b;
+}
+
 #header h2 {
     font-family: 'Averia Serif Libre', times, serif;
     font-size: 1.2rem;

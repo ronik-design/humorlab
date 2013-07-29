@@ -16,7 +16,10 @@ randomCartoon = function () {
     var criteria = previousCartoon ? { _id: { $ne : previousCartoon } } : {},
         cartoon = randomRecord(Cartoons, criteria);
 
-    previousCartoon = cartoon._id;
+    if (cartoon){
+        previousCartoon = cartoon._id;
+    }
+
 
     return cartoon;
 };
