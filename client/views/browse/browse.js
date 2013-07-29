@@ -1,6 +1,5 @@
 Template.browse.cartoons = function() {
     var cartoons  = Cartoons.find({});
-    console.log(cartoons);
     return cartoons;
 };
 

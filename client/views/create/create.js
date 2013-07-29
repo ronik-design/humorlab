@@ -4,19 +4,6 @@ Template.create.helpers({
     }
 });
 
-//buzz.defaults.preload = 'auto';
-//buzz.defaults.autoplay = false;
-//buzz.defaults.loop = false;
-//buzz.defaults.placeholder = '--';
-//buzz.defaults.duration = 5000;
-//buzz.defaults.formats = ['wav'];
-
-// INSIGHT
-//    general_encouragement = new buzz.sound('/audio/insight/general_encouragement.wav'),
-//    howtobefunny = new buzz.sound('/audio/insight/howtobefunny.wav'),
-
-// CLOSING
-
 Template.create.events({
     'click .submit': function () {
         var text = $(".caption-entry").val(),

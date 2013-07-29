@@ -21,7 +21,6 @@ Template.showdown.events({
     'click a.skip': function (e) {
         e.preventDefault();
 
-
         Session.set("currentCartoon", randomCartoon());
     }
 });
