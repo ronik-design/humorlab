@@ -35,6 +35,9 @@ function handleCreate(id) {
 }
 
 Meteor.Transitioner.setOptions({
+    'before': function(){
+        buzz.all().stop();
+    },
     'after': function(){
         var pathname = window.location.pathname;
 
