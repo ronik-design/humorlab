@@ -7,8 +7,6 @@ randomRecord = function (collection, criteria) {
         result = collection.findOne(_.extend({ random : { $lte : rand } }, criteria), options);
     }
 
-    console.log(result);
-
     return result;
 };
 
@@ -22,7 +20,6 @@ randomCartoon = function () {
     if (cartoon){
         previousCartoon = cartoon._id;
     }
-
 
     return cartoon;
 };

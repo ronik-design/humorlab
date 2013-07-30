@@ -16,8 +16,8 @@ Template.create.events({
                 score: 0
             });
 
-
             var compliment = getRandom(compliments);
+
             compliment.bind("ended", function() {
                 Meteor.Router.to("/caption/" + id);
             });
